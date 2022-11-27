@@ -1,12 +1,14 @@
 <template>
   <div>
-    <router-view></router-view>
+    <Header></Header>
+    <Conent></Conent>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref, reactive } from "vue";
-console.log(import.meta.env.VITE_API);
+import Header from "./header/index.vue";
+import Conent from "./content/index.vue";
 </script>
 
 <style scoped lang="less"></style>
